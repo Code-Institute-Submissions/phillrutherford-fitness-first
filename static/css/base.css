@@ -6,16 +6,27 @@ body {
 }
 
 .view-plans-button {
-    background: black;
+    background: green-700;
     color: white;
-    min-width: 260px;
+    min-width: 200px;
 }
 
 .view-plans-button:hover,
 .view-plans-button:active,
 .view-plans-button:focus {
-    background: #222;
+    background: green-700;
     color: white;
+}
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background: rgb(240, 240, 240);
+}
+
+.title-font {
+    color: green-700;
 }
 
 /* -------------------------------- Media Queries */
