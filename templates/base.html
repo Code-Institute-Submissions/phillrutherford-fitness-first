@@ -15,7 +15,7 @@
 
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
@@ -39,7 +39,7 @@
   <body>
 
     <header class="container-fluid fixed-top">
-        <div class="row d-none d-lg-flex">
+        <div class="row bg-white d-none d-lg-flex">
             <div class="col-12 col-lg-6 my-auto py-1 py-lg-0 text-center text-lg-left text-uppercase">
                 <a href="{% url 'home' %}">
                     <h3 class="text-$green-600">Fitness First</h3>
