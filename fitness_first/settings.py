@@ -45,7 +45,11 @@ INSTALLED_APPS = [
     'home',
     'workouts',
     'meals',
+
+    # Other
+    'crispy_forms',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
