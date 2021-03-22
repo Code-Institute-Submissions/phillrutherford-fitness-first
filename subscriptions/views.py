@@ -1,19 +1,52 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
+from django.conf import settings
 
 from .forms import SubscriptionForm
 
+import stripe
+
 # Create your views here.
 def subscription(request):
-    bag = request.session.get('bag', {})
-    if not bag:
-        message.error(request, "No Subscription selected yet.")
-        return redirect(reverse, ('workouts'))
+    stripe_public_key = settings.STRIPE_PUBLIC_KEY
+    stripe_secret_key = setting.STRIPE_SECRET_KEY
+
+    stripe_total = round(total * 100)
+    stripe.api_key = stripe_secret_key
+    intent = stripe.PaymentIntent.create(
+        amount=stripe_total,
+        currency=settings.STRIPE_CURRENCY,
+    )
+    print(intent)
 
     subscription_form = SubscriptionForm()
-    template = /subscriptions/subscription.html
+
+    if not stripe_public_key:
+        messages.warning(request, 'Stripe public key is missing. \
+            Did you forget to set it in your environment?')
+
+    template = 'subscriptions/subscription.html'
     context = {
-        'subscription_form' = subscription_form
+        'subscription_form': subscription_form
+        'stripe_public_key': 'pk_test_51IPe6YEDQ5VY803KilcwszsHwmiokZWV3YaCoWRM8EAb0hFAIXzefeC5i0gIfZjxE32vl2PJJxYAOQKHgoqujqNt00PA3jtd3l',
+    }
+
+def subscription_success(request, subscription_number):
+    """
+    Handle successful subscriptions
+    """
+    save_info = request.session.get('save_info')
+    subscription = get_object_or_404(Subscription, subscription_number=subscription_number)
+    messages.success(request, f'Subscription successfully processed! \
+        Your order number is {subscription_number}. A confirmation \
+        email will be sent to {subscription.email}.')
+
+    if '\\\\\\\' in request.session:
+        del request.session['\\\\\\\\']
+
+    template = 'subscription/subscription_success.html'
+    context = {
+        'subscription': subscription,
     }
 
     return render(request, template, context)
