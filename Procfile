@@ -1,0 +1,1 @@
+web: gunicorn fitness-first1.wsgi:application

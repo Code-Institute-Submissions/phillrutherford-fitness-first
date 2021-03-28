@@ -11,35 +11,35 @@
     </div>
 {% endblock %}
 
+<!---Workouts-->
 {% block content %}
-    <div class="overlay"></div>
     <div class="container title-font">
         <div class="row">
             <div class="col">
-                <h2>Get Lean & Toned</h2>
+                <h2>Lose Weight</h2>
             </div>
         </div>
         <div class="row">
             <div class="workout-container">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 text-center">
                     <div class="card" style="width: 18rem;">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Workout description, time to complete and equipment needed.</p>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Step 1</li>
-                            <li class="list-group-item">Step 2</li>
-                            <li class="list-group-item">Step 3</li>
-                        </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Link to a youtube video of the workout</a>
-                            <a href="#" class="card-link">Another link</a>
+                            <a href="https://www.youtube.com/watch?v=95846CBGU0M" class="card-link">Link to a youtube video of the workout</a>
+                            <button id="checkout-button">Register for full access to this programme</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+<!---Meals-->
+{% include 'meals/lose_weight_mealplan.html' %}
+
 {% endblock %} 

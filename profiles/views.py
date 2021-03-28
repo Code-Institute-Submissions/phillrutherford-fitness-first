@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
-from models import UserProfile
+from profiles.models import UserProfile
 
 
 def profile(request):

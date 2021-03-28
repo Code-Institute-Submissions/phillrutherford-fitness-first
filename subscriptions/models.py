@@ -1,4 +1,4 @@
-from django.db import .models
+from django.db import models
 
 import uuid
 
@@ -11,7 +11,7 @@ class Subscription(models.Model):
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     age = models.CharField(max_length=3, null=False, blank=False)
-    subscription_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    subscription_total = 6.99
 
     def _generate_subscription_number(self):
         """

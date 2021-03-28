@@ -1,20 +1,21 @@
 body {
-    background: url('/media/homepage1.jpeg') no-repeat center center fixed;
+    background: url('') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 200px);
     font-family: Oxygen;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.view-plans-button {
-    background: green-700;
-    color: white;
-    min-width: 200px;
+h1, h2, h4, p {
+    margin-top: 5%;
 }
 
-.view-plans-button:hover,
-.view-plans-button:active,
-.view-plans-button:focus {
-    background: green-700;
+.join-button,
+.join-button:hover,
+.join-button:active,
+.join-button:focus {
+    background: #198754;
     color: white;
 }
 
@@ -25,8 +26,15 @@ body {
     background: rgb(240, 240, 240);
 }
 
-.title-font {
-    color: green-700;
+.title-font,
+.title-font:hover,
+.title-font:active,
+.title-font:focus {
+    color: #198754;
+}
+
+#main-nav {
+    color: #198754;
 }
 
 /* -------------------------------- Media Queries */
