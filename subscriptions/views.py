@@ -1,10 +1,27 @@
 from django.shortcuts import render, redirect, reverse
+from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
 from .forms import SubscriptionForm
 
 import stripe
+import json
+
+@require_POST
+def cache_subscription_data(request):
+    try:
+        pid = request.POST.get('client_secret').split('_secret')[0]
+        stripe.api_key = settings.STRIPE_SECRET_KEY
+        stripe.PaymentIntent.modify(pid, metadata={
+            'save_info': request.POST.get('save_info'),
+            'username': request.user,
+        })
+        return HttpResponse(status=200)
+    except Exception as e:
+        messages.error(request, 'Sorry, your payment cannot be \
+            processed right now. Please try again later.')
+        return HttpResponse(content=e, status=400)
 
 # Create your views here.
 def subscription(request):
@@ -13,6 +30,7 @@ def subscription(request):
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     subscription_total = 6.99
+    stripe_total = 6.99
     total = 6.99
 
     stripe_total = round(total * 100)

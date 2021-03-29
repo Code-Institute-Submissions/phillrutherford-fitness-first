@@ -71,7 +71,10 @@ http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpink-yak-0xgs5a6b
 
 I had some issues with deployment also. I couldnt login to heroku through the terminal but had to input "heroku login -i" instead of "heroku login". 
 Furthermore deployment is still failing and I am unsure why. I am getting a Bad Request(400) but cannot think why at this time. 
+I resolved this issue through the help of tutor support. The aws region name was labelled incorrectly.
 
+Finally I couldnt get the payment intent working. I spent my last day working on it and was unsuccessful in solving the issue. I am not sure what the issue is but unfortuneatley I ran out of time and had to submit an 
+incomplete project.
 
 # Deployment
 
