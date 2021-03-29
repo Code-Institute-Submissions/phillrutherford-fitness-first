@@ -1,1 +1,1 @@
-web: gunicorn fitness-first1.wsgi:application
+web: gunicorn fitness_first.wsgi:application
