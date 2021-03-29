@@ -13,31 +13,24 @@
 
 <!---Workouts-->
 {% block content %}
-    <div class="container title-font">
+  <div class="container title-font">
         <div class="row text-center">
-            <div class="col">
-                <h2>Get Lean</h2>
+            <div class="col-12">
+                <h2>Get Lean & Toned</h2>
             </div>
-        </div>
-        <div class="row text-center">
-            <div class="workout-container">
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Workout description, time to complete and equipment needed.</p>
-                        </div>
-                        <div class="card-body">
-                            <a href="https://www.youtube.com/watch?v=95846CBGU0M" class="card-link">Link to a youtube video of the workout</a>
-                            <button id="checkout-button">Register for full access to this programme</button>
-                        </div>
+        
+        
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <a href="https://www.youtube.com/watch?v=oPRou79HEfM" class="card-link">Click here to view the workout</a>
+                        <hr>
+                        <a href="{% url 'subscriptions' %}" class="btn-success">Register for full access to this programme</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
 <!---Meals-->
 {% include 'meals/get_lean_mealplan.html' %}

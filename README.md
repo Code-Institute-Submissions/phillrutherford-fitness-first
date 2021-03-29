@@ -40,6 +40,9 @@ In addition to that there would be some workout apparel available - tanktops, t-
 I would also have preferred to have used some images for the meals. Maybe even video instructions on prepping and cooking. But an image of the final product would add a nice effect to 
 the page. 
 
+In addition to all of these. The videos used for workouts are not at all what I would want to use. I would prefer to create them all myself or one specific trainer to keep things consistent.
+I simply used 3 youtube videos as examples to the function of the site.
+
 # Technologies Used
 
 - The project uses Stripe to initalise payment methods.
@@ -66,6 +69,8 @@ tested myself and feel succeeded in the resulting project.
 I also ran the code through several validators https://validator.w3.org/nu/?doc=https%3A%2F%2Fpink-yak-0xgs5a6b.ws-us03.gitpod.io%2F showed 6 warnings.
 http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpink-yak-0xgs5a6b.ws-us03.gitpod.io%2F%23%2Fworkspace%2Ffitness-first&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en showed 0 errors.
 
+I had some issues with deployment also. I couldnt login to heroku through the terminal but had to input "heroku login -i" instead of "heroku login". 
+Furthermore deployment is still failing and I am unsure why. I am getting a Bad Request(400) but cannot think why at this time. 
 
 
 # Deployment

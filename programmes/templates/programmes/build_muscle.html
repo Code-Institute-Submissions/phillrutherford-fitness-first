@@ -15,24 +15,17 @@
 {% block content %}
     <div class="container title-font">
         <div class="row text-center">
-            <div class="col">
+            <div class="col-12">
                 <h2>Build Muscle</h2>
             </div>
         
         
-            <div class="workout-container">
-                <div class="col-12 text-center">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Workout description, time to complete and equipment needed.</p>
-                        </div>
-                        <div class="card-body">
-                            <a href="https://www.youtube.com/watch?v=95846CBGU0M" class="card-link">Click here to view the workout</a>
-                            <hr>
-                            <a href="{% url 'subscriptions' %}" class="btn-success">Register for full access to this programme</a>
-                        </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <a href="https://www.youtube.com/watch?v=95846CBGU0M" class="card-link">Click here to view the workout</a>
+                        <hr>
+                        <a href="{% url 'subscriptions' %}" class="btn-success">Register for full access to this programme</a>
                     </div>
                 </div>
             </div>
