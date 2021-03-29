@@ -92,6 +92,7 @@ To deploy this project I used Heroku. For this project I deployed my app through
     - SECRET_KEY
     - STRIPE_PUBLIC_KEY
     - STRIPE_SECRET_KEY
+    - STRIPE_WH_SECRET
     - USE_AWS
 7. Scroll down to domain. 
 8. You will see this message. Your app can be found at https://fitness-first1.herokuapp.com/
