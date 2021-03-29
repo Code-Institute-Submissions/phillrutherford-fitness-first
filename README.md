@@ -1,49 +1,5 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome phillrutherford,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
-
 # Fitness First
 
 Fitness First is a website/application designed to help users reach their fitness goals without the hassle or costs of gym memberships. 
@@ -90,7 +46,7 @@ the page.
 - The project uses bootstrap for navbar and layout designs.
 - The project uses google fonts to specify the font chosen.
 - The project uses the django framework to simplify the building process.
-- The project uses python to
+- The project uses python.
 - The project uses Javascript
 
 # Testing
@@ -100,4 +56,57 @@ working despite going through the course material, slack and tutor support all u
 wasnt working, what I had to do was make the path programmes/templates/programmes/build_muscle.html and then everything ran smoothly. 
 
 Furthermore I am struggling to get the card element from stripe to show on my project. I have revisited the course material and checked over my views/urls/html/js code for it and still cannot see the issue. 
-I found out the issue was the same as the one above, I had to create another folder called subscriptions within the static folder and then everything worked perfectly.
+I found out the issue was the same as the one above, I had to create another folder called subscriptions within the static folder and then everything worked perfectly. 
+
+As a user I want to be able to view workouts and meals as examples before signing up so I had to ensure that there were some available to all user and not just subscribed users. 
+
+As a user I want to be able to navigate and view the site easily and quickly identify the specifc programme to my personal goals. To do this I had to make the site simple, clear and effective. Something I continously 
+tested myself and feel succeeded in the resulting project.
+
+I also ran the code through several validators https://validator.w3.org/nu/?doc=https%3A%2F%2Fpink-yak-0xgs5a6b.ws-us03.gitpod.io%2F showed 6 warnings.
+http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpink-yak-0xgs5a6b.ws-us03.gitpod.io%2F%23%2Fworkspace%2Ffitness-first&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en showed 0 errors.
+
+
+
+# Deployment
+
+To deploy this project I used Heroku. For this project I deployed my app through Heroku. These are the steps I followed: 
+1. Sign in to Heroku. 
+2. Add a new app named "fitness-first" 
+3. Under deployment method select "connect to github". 
+4. Link the specifc github repo to the heroku app. 
+5. Go to settings and then reveal config vars. 
+6. I added the following. 
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+    - DATABASE_URL
+    - DISABLE_COLLECTSTATIC
+    - SECRET_KEY
+    - STRIPE_PUBLIC_KEY
+    - STRIPE_SECRET_KEY
+    - USE_AWS
+7. Scroll down to domain. 
+8. You will see this message. Your app can be found at https://fitness-first1.herokuapp.com/
+
+To run this file locally: 
+1. Follow this link to the github repository https://github.com/phillrutherford/fitness-first 
+2. Select code. 
+3. Copy the url for the repository. 
+4. In your chosen development environment open the terminal. 
+5. Type git clone and then paste the url from step 3.
+
+# Credits
+
+- The image is from goolge images.
+- The colour is from bootstrap
+- Stripe is used for the payment intent
+- Navbar is used from bootstrap
+- Font is from Google Fonts.
+
+The project idea comes from an app called Centr. An app I use for my personal workouts and meals.
+
+### Acknowledgement
+Inspiration for the project comes from an app called Centr. An app I use for my personal workouts and meals. 
+Also given the recent time with COVID alot of the world has been on lockdown so coming up with creative home workout routines has been a challenge for many people.
+With the help of my mentor Jonathon on the coding side of the project I was able to come up the end product as you see it.
+Alot of the coding format was inspired by the course material, the way I learned it was the easiest and most effective way to produce the final product.
