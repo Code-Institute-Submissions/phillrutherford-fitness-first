@@ -22,16 +22,20 @@
 }
 
 .stripe-style-input::placeholder {
-    color: #aab7c4;
+  color:  #198754;
 }
 
 .fieldset-label {
-    position: center;
+  position: center;
+}
+
+.btn {
+  color: #198754;
 }
 
 #payment-form .form-control,
 #card-element {
-    color: #000;
+    color:  #198754;;
     border: 1px solid #000;
 }
 

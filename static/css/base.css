@@ -5,7 +5,9 @@ body {
     font-family: Oxygen;
     text-align: center;
     text-transform: uppercase;
+    color:  #198754;
 }
+
 
 h1, h2, h4, p {
     margin-top: 5%;

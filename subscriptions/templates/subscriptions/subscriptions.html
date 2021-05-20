@@ -27,16 +27,16 @@
 
         <div class="row">
             <div class="col-12 order-lg-last mb-5">
-                <p class="text-muted">Subscription Summary</p>
+                <p>Subscription Summary</p>
                 <div class="row">
                     <div class="col-12">
-                        <p class="mb-1 mt-0 small text-muted">Workout Programme</p>
+                        <p class="mb-1 mt-0 small">Workout Programme</p>
                     </div>
                 </div>
                 
             
                 <hr class="my-0">
-                <div class="row text-black text-right">
+                <div class="row text-right">
                     <div class="col-12">
                         <p class="my-0">Subscription Total:</p>
                     <div class="col-12">
@@ -45,11 +45,11 @@
                 </div>
             </div>
             <div class="col-12">
-                <p class="text-muted">Please Register or Login to complete your order</p>
+                <p>Please Register or Login to complete your order</p>
                 <form action="{% url 'subscriptions' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+                        <legend class="fieldset-label small px-2 w-auto">Details</legend>
                         {{ Subscription_form.full_name | as_crispy_field }}
                         {{ Subscription_form.email | as_crispy_field }}
                         {{ Subscription_form.age | as_crispy_field }}
@@ -68,7 +68,7 @@
 						</div>
                     </fieldset>
                     <fieldset class="px-3">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                        <legend class="fieldset-label small px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->
                         <div class="mb-3" id="card-element">
                         </div>
@@ -83,7 +83,7 @@
 
                     <div class="submit-button mt-5 mb-2">                    
 						
-						<button id="submit-button" class="btn btn-black rounded-0">
+						<button id="submit-button" class="btn rounded-0">
 							<span class="font-weight-bold">Confirm Subscription</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>
@@ -93,7 +93,7 @@
 							<span class="icon">
 								<i class="fas fa-exclamation-circle"></i>
 							</span>
-							<span>Your card will be charged <strong>${{ subscription_total|floatformat:2 }}</strong></span>
+							<span>Your card will be charged <strong>$6.99 per week</strong></span>
 						</p>
 					</div>
                 </form>
