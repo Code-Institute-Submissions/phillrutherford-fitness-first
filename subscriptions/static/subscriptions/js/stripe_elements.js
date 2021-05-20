@@ -52,6 +52,7 @@ form.addEventListener('submit', function(ev) {
     card.update({ 'disabled': true});
     $('#submit-button').attr('disabled', true);
     $('#payment-form').fadeToggle(100);
+    $('#loading-overlay').fadeToggle(100);
 
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
     // From using {% csrf_token %} in the form
@@ -61,7 +62,7 @@ form.addEventListener('submit', function(ev) {
         'client_secret': clientSecret,
         'save_info': saveInfo,
     };
-    var url = '/subscription/cache_subscription_data/';
+    var url = '/subscriptions/cache_subscription_data/';
 
     $.post(url, postData).done(function () {
     stripe.confirmCardPayment(clientSecret, {

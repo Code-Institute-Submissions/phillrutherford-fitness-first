@@ -1,9 +1,10 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
 
 from .forms import SubscriptionForm
+from .models import Subscription
 
 import stripe
 import json
@@ -28,6 +29,24 @@ def subscription(request):
 
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
+
+    if request.method == 'POST':
+        form_data = {
+            'full_name': request.POST['full_name'],
+            'email': request.POST['email'],
+            'age': request.POST['age']
+        }
+
+        subscription_form = SubscriptionForm(form_data)
+        if subscription_form.is_valid():
+            subscription = subscription_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            subscription.stripe_pid = pid
+            subscription.save()
+
+        request.session['save_info'] = 'save-info' in request.POST
+        return redirect(reverse('subscription_success', args=[subscription.subscription_number]))
+    
 
     subscription_total = 6.99
     stripe_total = 6.99
@@ -65,6 +84,7 @@ def subscription_success(request, subscription_number):
     Handle successful subscriptions
     """
     save_info = request.session.get('save_info')
+    
     subscription = get_object_or_404(Subscription, subscription_number=subscription_number)
     messages.success(request, f'Subscription successfully processed! \
         Your order number is {subscription_number}. A confirmation \
@@ -73,7 +93,7 @@ def subscription_success(request, subscription_number):
     if 'TODO' in request.session:
         del request.session['TODO']
 
-    template = 'subscription/subscription_success.html'
+    template = 'subscriptions/subscription_success.html'
     context = {
         'subscription': subscription,
     }

@@ -6,9 +6,10 @@ from django.dispatch import receiver
 # Create your models here.
 class UserProfile(models.Model):
     
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    default_email = models.CharField(max_length=20, null=True, blank=True)
+    
     def __str__(self):
-        user = models.OneToOneField(User, on_delete=models.CASCADE)
-        default_email = models.CharField(max_length=20, null=True, blank=True)
         return self.user.username
 
 @receiver(post_save, sender=User)
