@@ -21,6 +21,10 @@ h1, h2, h4, p {
     color: white;
 }
 
+.join-button a{
+    color:#fff;
+}
+
 .overlay {
     height: 100vh;
     width: 100vw;
@@ -37,6 +41,14 @@ h1, h2, h4, p {
 
 #main-nav {
     color: #198754;
+}
+
+.nav-link{
+    color: #0a4584;
+}
+
+.text-info a{
+    color: #409cff;
 }
 
 /* -------------------------------- Media Queries */
