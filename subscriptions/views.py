@@ -75,6 +75,7 @@ def subscription(request):
         'Subscription_form': Subscription_form,
         'stripe_public_key': 'pk_test_51IPe6YEDQ5VY803KilcwszsHwmiokZWV3YaCoWRM8EAb0hFAIXzefeC5i0gIfZjxE32vl2PJJxYAOQKHgoqujqNt00PA3jtd3l',
         'client_secret': intent.client_secret,
+        'subscription_total': subscription_total,
     }
 
     return render(request, template, context)
