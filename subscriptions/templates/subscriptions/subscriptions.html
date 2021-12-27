@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4">Subscription</h2>
+                <h1 class="logo-font mb-4">Subscription</h1>
                 <hr>
             </div>
         </div>
@@ -45,7 +45,6 @@
                 </div>
             </div>
             <div class="col-12">
-                <p>Please Register or Login to complete your order</p>
                 <form action="{% url 'subscriptions' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">

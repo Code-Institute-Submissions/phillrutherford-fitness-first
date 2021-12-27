@@ -45,12 +45,12 @@ I simply used 3 youtube videos as examples to the function of the site.
 
 # Technologies Used
 
-- The project uses Stripe to initalise payment methods.
-- The project uses bootstrap for navbar and layout designs.
-- The project uses google fonts to specify the font chosen.
-- The project uses the django framework to simplify the building process.
-- The project uses python.
-- The project uses Javascript
+- Stripe to initalise payment methods.
+- Bootstrap for navbar and layout designs.
+- Google fonts to specify the font chosen.
+- Django framework to simplify the building process.
+- Python.
+- Javascript.
 
 # Testing
 
