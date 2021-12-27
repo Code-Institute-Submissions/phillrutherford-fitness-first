@@ -4,7 +4,7 @@ body {
     height: calc(100vh - 200px);
     font-family: Oxygen;
     text-align: center;
-    text-transform: uppercase;
+    -text-transform: uppercase;
     color: white;
 }
 
@@ -22,8 +22,9 @@ h2 {
     letter-spacing: 0.5rem;
 }
 
-h1, h2, h4, p {
-    margin-top: 5%;
+h1, h2, h4 {
+    margin-top: 10%;
+    text-transform: uppercase;
 }
 
 .join-button,

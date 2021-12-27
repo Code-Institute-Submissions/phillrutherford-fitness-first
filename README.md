@@ -1,5 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
 # Fitness First
 
 Fitness First is a website/application designed to help users reach their fitness goals without the hassle or costs of gym memberships. 
@@ -106,7 +104,7 @@ To run this file locally:
 
 # Credits
 
-- The image is from goolge images.
+- The image is from google images.
 - The colour is from bootstrap
 - Stripe is used for the payment intent
 - Navbar is used from bootstrap
