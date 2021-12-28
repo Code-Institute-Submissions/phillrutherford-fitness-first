@@ -5,9 +5,26 @@ The site focus on using minimal equipment whilst keeping the workouts quick and 
 
 ## UX
 
-Please head over to the UX folder to find my marvelapp mock ups and my User stories that I used in the planning process.
+I used Marvel for mocking up my UX. The images of that are below:
 
-<a href="{% url 'user_stories' %}">
+![User Stories](https://github.com/phillrutherford/fitness-first/blob/master/media/user_stories.png?raw=true)
+![UX1](https://github.com/phillrutherford/fitness-first/blob/master/media/ux1.png?raw=true)
+![UX2](https://github.com/phillrutherford/fitness-first/blob/master/media/ux2.png?raw=true)
+![UX3](https://github.com/phillrutherford/fitness-first/blob/master/media/ux3.png?raw=true)
+![UX4](https://github.com/phillrutherford/fitness-first/blob/master/media/ux4.png?raw=true)
+![UX5](https://github.com/phillrutherford/fitness-first/blob/master/media/ux5.png?raw=true)
+![UX6](https://github.com/phillrutherford/fitness-first/blob/master/media/ux6.png?raw=true)
+![UX7](https://github.com/phillrutherford/fitness-first/blob/master/media/ux7.png?raw=true)
+![UX8](https://github.com/phillrutherford/fitness-first/blob/master/media/ux8.png?raw=true)
+![UX9](https://github.com/phillrutherford/fitness-first/blob/master/media/ux9.png?raw=true)
+![UX10](https://github.com/phillrutherford/fitness-first/blob/master/media/ux10.png?raw=true)
+![UX11](https://github.com/phillrutherford/fitness-first/blob/master/media/ux11.png?raw=true)
+![UX12](https://github.com/phillrutherford/fitness-first/blob/master/media/ux12.png?raw=true)
+![UX13](https://github.com/phillrutherford/fitness-first/blob/master/media/ux13.png?raw=true)
+![UX14](https://github.com/phillrutherford/fitness-first/blob/master/media/ux14.png?raw=true)
+![UX15](https://github.com/phillrutherford/fitness-first/blob/master/media/ux15.png?raw=true)
+![UX16](https://github.com/phillrutherford/fitness-first/blob/master/media/ux16.png?raw=true)
+![UX17](https://github.com/phillrutherford/fitness-first/blob/master/media/ux17.png?raw=true)
 
 
 ## Features
