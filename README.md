@@ -7,6 +7,9 @@ The site focus on using minimal equipment whilst keeping the workouts quick and 
 
 Please head over to the UX folder to find my marvelapp mock ups and my User stories that I used in the planning process.
 
+<a href="{% url 'user_stories' %}">
+
+
 ## Features
 
 #### Feature 1 - Subscription

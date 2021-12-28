@@ -4,7 +4,6 @@ body {
     height: calc(100vh - 200px);
     font-family: Oxygen;
     text-align: center;
-    -text-transform: uppercase;
     color: white;
 }
 
