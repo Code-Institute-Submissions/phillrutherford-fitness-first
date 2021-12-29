@@ -69,6 +69,7 @@ I simply used 3 youtube videos as examples to the function of the site.
 - Django framework to simplify the building process.
 - Python.
 - Javascript.
+- AWS stores my background image.
 
 # Testing
 
@@ -84,15 +85,9 @@ As a user I want to be able to view workouts and meals as examples before signin
 As a user I want to be able to navigate and view the site easily and quickly identify the specifc programme to my personal goals. To do this I had to make the site simple, clear and effective. Something I continously 
 tested myself and feel succeeded in the resulting project.
 
-I also ran the code through several validators https://validator.w3.org/nu/?doc=https%3A%2F%2Fpink-yak-0xgs5a6b.ws-us03.gitpod.io%2F showed 6 warnings.
-http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpink-yak-0xgs5a6b.ws-us03.gitpod.io%2F%23%2Fworkspace%2Ffitness-first&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en showed 0 errors.
+I also ran the code through several validators https://validator.w3.org/ for html, http://jigsaw.w3.org/css-validator/ for css and https://codebeautify.org/jsvalidate for javascript for which they showed no errors.
 
-I had some issues with deployment also. I couldnt login to heroku through the terminal but had to input "heroku login -i" instead of "heroku login". 
-Furthermore deployment is still failing and I am unsure why. I am getting a Bad Request(400) but cannot think why at this time. 
-I resolved this issue through the help of tutor support. The aws region name was labelled incorrectly.
 
-Finally I couldnt get the payment intent working. I spent my last day working on it and was unsuccessful in solving the issue. I am not sure what the issue is but unfortuneatley I ran out of time and had to submit an 
-incomplete project.
 
 # Deployment
 
@@ -125,8 +120,8 @@ To run this file locally:
 # Credits
 
 - The image is from google images.
-- The colour is from bootstrap
-- Stripe is used for the payment intent
+- The colour is from bootstrap.
+- Stripe is used for the payment intent.
 - Navbar is used from bootstrap
 - Font is from Google Fonts.
 
@@ -135,5 +130,5 @@ The project idea comes from an app called Centr. An app I use for my personal wo
 ### Acknowledgement
 Inspiration for the project comes from an app called Centr. An app I use for my personal workouts and meals. 
 Also given the recent time with COVID alot of the world has been on lockdown so coming up with creative home workout routines has been a challenge for many people.
-With the help of my mentor Jonathon on the coding side of the project I was able to come up the end product as you see it.
+With the help of my mentor Jonathon and in resubmitting Victor on the coding side of the project I was able to come up the end product as you see it.
 Alot of the coding format was inspired by the course material, the way I learned it was the easiest and most effective way to produce the final product.
