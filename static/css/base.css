@@ -54,7 +54,7 @@ h1, h2, h4 {
 }
 
 .list-group-item, 
-.membership-info,
+p,
 .text-info {
     background-color:#444;
     opacity: 0.8;
