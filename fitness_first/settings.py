@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '9v^i772vp7hivan@9g+^vt)zv9z)^0&0kaa3d$=11@8xvridt2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = "DEVELOPMENT" in os.environ
 
 ALLOWED_HOSTS = ['fitness-first1.herokuapp.com', 'localhost']
 
